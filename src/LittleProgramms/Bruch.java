@@ -4,11 +4,22 @@ public class Bruch {
 
     private int numerator;
     private int denominator;
+    private static int nrFraction=0;
+
+
 
     public Bruch( int numerator, int denominator){
         this.numerator= numerator;
         this.denominator = denominator;
+        ++nrFraction;
+
+
     }
+
+    public static int getNrFraction() {
+        return nrFraction;
+    }
+
 
     public int getNumerator() {
         return numerator;
@@ -49,4 +60,7 @@ public class Bruch {
         return  newBruch;
 
     }
+
+
+
 }

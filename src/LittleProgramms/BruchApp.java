@@ -21,6 +21,8 @@ public class BruchApp {
 
         fraktion.add(b2).print();
 
+        System.out.println(Bruch.getNrFraction());
+
 
 
 

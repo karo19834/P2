@@ -36,7 +36,9 @@ public class BankApp {
         }
 
 
-
+        System.out.println( nummer1);
+        System.out.println( nummer2);
+        System.out.println( nummer3);
 
     }
 }
