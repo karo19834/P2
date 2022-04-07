@@ -1,5 +1,7 @@
 package LittleProgramms;
 
+import java.util.Objects;
+
 public class Employee {
     private int empNumber;
     private String name;
@@ -29,6 +31,14 @@ public class Employee {
         return departament;
     }
 
+
+    public boolean comparteDepartment( Employee e){
+        if( this.departament.equals(e.departament)){
+            return true;
+        }
+        return false;
+    }
+
     public void setSalary(double salary) {
         this.salary = salary;
     }
@@ -45,5 +55,18 @@ public class Employee {
                 ", salary=" + salary +
                 ", departament='" + departament + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return empNumber == employee.empNumber && Objects.equals(departament, employee.departament);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(empNumber, departament);
     }
 }

@@ -17,5 +17,7 @@ public class EmployeeApp {
         System.out.println(mgr.findByDepartament("Musik"));
         System.out.println(mgr.findByMaxSalary());
 
+        System.out.println(e1.comparteDepartment(e2));
+
     }
 }
