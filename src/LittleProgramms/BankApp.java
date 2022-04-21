@@ -1,5 +1,7 @@
 package LittleProgramms;
 
+import java.util.HashMap;
+
 public class BankApp {
     public static void main(String[] args) {
 
@@ -39,6 +41,21 @@ public class BankApp {
         System.out.println( nummer1);
         System.out.println( nummer2);
         System.out.println( nummer3);
+
+        HashMap<String, Account> bank = new HashMap<>();
+
+        bank.put("Hansi Hinteregger", nummer1);
+        bank.put("Dieter Bohlen", nummer2);
+        bank.put("Larissa Müller", nummer3);
+
+        System.out.println( bank.containsKey( "Hansi Hinteregger"));
+        System.out.println( bank.get("Dieter Bohlen"));
+        //iterieren(anders)
+        for(String owner : bank.keySet()){
+            System.out.println(owner);
+            System.out.println(bank.get(owner));
+        }
+
 
     }
 }
