@@ -14,11 +14,12 @@ public class HaseApp {
         oh.versteckeOstereier();
         wh.verteileGeschenke();
         wh.hoppeln();
+        System.out.println("--------------------------------------------------------");
 
-        Hase hase1 = wh;
-        hase1.hoppeln();
-
-        Osterhase oster2 = (Osterhase) hase1;
+//        Hase hase1 = wh;
+//        hase1.hoppeln();
+//
+//        Osterhase oster2 = (Osterhase) hase1;
 
 
         hs.addHase( h);
