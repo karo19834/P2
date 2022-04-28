@@ -8,6 +8,6 @@ public class Klarinette extends  Instrument{
     @Override
     public int play() {
         System.out.println("Klarinette spiellt dzyyyndzyyyn");
-        return lautstaerke++;
+        return lautstaerke;
     }
 }

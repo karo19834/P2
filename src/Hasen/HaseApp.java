@@ -1,5 +1,7 @@
 package Hasen;
 
+import java.util.ArrayList;
+
 public class HaseApp {
     public static void main(String[] args) {
 
@@ -27,6 +29,15 @@ public class HaseApp {
         hs.addHase(oh);
 
         hs.hoppelAll();
+
+
+        ArrayList<GoesToParty> partyPeople = new ArrayList<>();
+        partyPeople.add(wh);
+        partyPeople.add(oh);
+
+        for( GoesToParty p: partyPeople){
+            p.party("alcoholfree champaign", "unicorn cake");
+        }
 
 
     }

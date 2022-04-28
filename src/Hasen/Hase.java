@@ -1,6 +1,6 @@
 package Hasen;
 
-public class Hase {
+public class Hase implements GoesToParty {
     public String name;
 
     public Hase ( String name){
@@ -14,5 +14,10 @@ public class Hase {
     }
     public void fressen(){
         System.out.println( name + " frisst");
+    }
+
+    @Override
+    public void party(String drink, String cake) {
+        System.out.println( name+ "goes to party and eats "+ cake + " and drings "+ drink);
     }
 }

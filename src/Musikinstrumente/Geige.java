@@ -8,6 +8,6 @@ public class Geige extends  Instrument{
     @Override
     public int play() {
         System.out.println("Geige spiellt grrrwrrrrggg");
-        return lautstaerke++;
+        return lautstaerke;
     }
 }

@@ -8,6 +8,7 @@ public class Gitarre extends Instrument{
     @Override
     public int play() {
         System.out.println("Gitarre spiellt srututututu");
-        return lautstaerke++;
+        return lautstaerke;
     }
+
 }
