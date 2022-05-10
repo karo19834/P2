@@ -1,6 +1,6 @@
 package LittleProgramms;
 
-public class Dog {
+public class Dog implements Comparable<Dog>{
     public  String name;
     public  String eyeColor;
     public  int weight;
@@ -37,5 +37,15 @@ public class Dog {
             text = name + " barks until all other dogs leave the party";
         }
         return text;
+    }
+
+    @Override
+    public int compareTo(Dog o) {
+        if (this.weight > o.weight){
+            return -1;
+        }if (this.weight < o.weight){
+            return 1;
+        }
+        return 0;
     }
 }
