@@ -1,4 +1,4 @@
-package Logisticmanager;
+package CarShirt;
 
 public class Car implements Movable {
     private String type;

@@ -1,4 +1,4 @@
-package Logisticmanager;
+package CarShirt;
 
 public interface Movable {
 

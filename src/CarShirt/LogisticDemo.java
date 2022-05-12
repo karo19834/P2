@@ -1,4 +1,4 @@
-package Logisticmanager;
+package CarShirt;
 
 public class LogisticDemo {
     public static void main(String[] args) {
