@@ -10,7 +10,8 @@ public class WasserApp {
          wm.addStand(w2);
         System.out.println(wm);
 
-        System.out.println(wm.findById(11));
+       //System.out.println(wm.findById(11));
+        System.out.println(wm.findAllByGewaesser("Mur"));
 
 
 

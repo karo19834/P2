@@ -18,14 +18,27 @@ public class WasserstandManager {
         wasserStand.add(w);
     }
 
-    public Wasserstand findById ( int id){
-        for (int i = 0; i < wasserStand.size(); i++) {
-            if ( wasserStand.contains(id)){
-                return wasserStand.get(i);
+//    public Wasserstand findById ( int id){
+//
+//        for ( Wasserstand w: wasserStand) {
+//            if ( w.getId().equals(id)){
+//                ;
+//            }
+//        }
+//        return ;
+//    }
+
+    public ArrayList<Wasserstand> findAllByGewaesser( String gewaesserName){
+        ArrayList<Wasserstand> gewaesser= new ArrayList<>();
+        for ( Wasserstand w: wasserStand) {
+            if ( w.getGewaesserName().equals(gewaesserName)){
+                gewaesser.add(w);
             }
         }
-        return null;
+        return gewaesser;
     }
+
+
 
     @Override
     public String toString() {
