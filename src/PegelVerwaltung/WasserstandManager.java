@@ -18,15 +18,15 @@ public class WasserstandManager {
         wasserStand.add(w);
     }
 
-//    public Wasserstand findById ( int id){
-//
-//        for ( Wasserstand w: wasserStand) {
-//            if ( w.getId().equals(id)){
-//                ;
-//            }
-//        }
-//        return ;
-//    }
+    public Wasserstand findById ( int id){
+
+        for ( Wasserstand w: wasserStand) {
+            if ( w.getId() == id){
+                return w;
+            }
+        }
+        return null;
+    }
 
     public ArrayList<Wasserstand> findAllByGewaesser( String gewaesserName){
         ArrayList<Wasserstand> gewaesser= new ArrayList<>();
@@ -37,6 +37,10 @@ public class WasserstandManager {
         }
         return gewaesser;
     }
+
+//    public Wasserstand findLastWasserstand(String gewaesserName){
+//
+//    }
 
 
 
