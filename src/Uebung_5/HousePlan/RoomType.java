@@ -1,0 +1,6 @@
+package Uebung_5.HousePlan;
+
+public enum RoomType {
+
+    BEDROOM, KITCHEN, LIVINGROOM, EATINKITCHEN, STOREROOM, TOILET, BATHROOM, CORRIDOR
+}
